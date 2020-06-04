@@ -1,0 +1,732 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Fichier disponible sur le site http://mazambatedie.free.fr  %%%%
+%%%%%%%%%%%%%%%%% date  7 mai 2008   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%% Auteur : MAZAMBA T�die %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[11pt, green,handout]{beamer} % version imprimable (1)
+
+\documentclass[10pt, hyperref={pdfpagemode=FullScreen}]{beamer} % (2) version pour la pr�sentation, en alternance avec (1)
+
+\mode<presentation>
+{
+  %\setbeamertemplate{background canvas}[vertical shading][bottom=red!10,top=blue!10]
+   \setbeamertemplate{background canvas}[vertical shading][bottom=red!20,top=blue!30] % arriere plan d�grad� bleu-rouge
+   \usefonttheme[onlysmall]{structurebold}
+}
+%% Les lignes qui suivent sont des lignes standards Latex et ne sont pas sp�cifiques � Beamer.
+\usepackage[T1]{fontenc}
+\usepackage{colortbl}
+\usepackage[english, french]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{pstricks}
+\usepackage{pst-plot}
+\usepackage{tabularx}
+\usepackage{color}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{Human capital, Leisure Time and Economic Growth}
+\keywords{Human capital, time of leisure, equilibrium, competitive equilibrium}
+\author{\textbf{Amine Badidi}}
+\institute{
+Campus de Fouillole, Guadeloupe\\
+24-25 Avril 2008
+}
+\date{}
+%%%%%%%%%Autres th�mes possibles%%%%%%%%%%%%%%%
+%%%% Pour en activ� un, il suffit d'enlever le signe pourcentage devant la ligne
+%\usetheme{Berkeley}
+%\usetheme{Madrid}
+%\usetheme{Bergen}
+%\usetheme{Warsaw}
+\usetheme{Darmstadt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{lgray}{cmyk}{0,0,0,0.14}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{d�finition}[theorem]{D�finition}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Le document commence ici %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% en vous aidant de la page consacrer � Beamer%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% Vous n'aurez aucun mal � comprendre les lignes qui suivent  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\frame{\titlepage}
+
+
+\part{Notre probl�me}  
+
+\begin{frame}
+\frametitle{Programme de l'expos�}
+\tableofcontents
+\end{frame}
+
+\section{Capital humain et croissance}
+
+\begin{frame}
+\transdissolve
+\begin{block}{}
+\centering \huge{\textbf{I- Capital humain et croissance �conomique}}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\transdissolve
+\begin{block}{}
+\centering{\bf{\emph{Retour sur quelques travaux}}}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\transwipe[direction=360]
+     \frametitle{}
+     \begin{block}{}
+     \begin{itemize}
+     \item<1-> \textbf{Solow (1957)} montre que le travail (brut) et le capital physique n'arrivent pas � expliquer         une part importante des variations du produit (\emph{r�sidu de Solow}). 
+     \item<2-> \textbf{Uzawa (1965)} montre, en sp�cifiant une technologie � rendements constants dans le secteur          �ducatif, que le capital humain est le moteur de la croissance �conomique.
+     \item<3-> \textbf{Benhabib \& Perli (1994)} mettent en �vidence une plage de valeurs des param�tres pour laquelle      il y a un probl�me d'ind�termination et d'unicit� de la solution dans le mod�le de Lucas (1988).
+     \end{itemize}
+      \end{block}
+\end{frame}
+
+
+\begin{frame}
+\transdissolve
+\begin{block}{}
+\centering{\bf{\emph{Mod�le de Lucas (1988)}}}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+     \frametitle{\emph{Human Capital is the Engine of Growth}}
+     \begin{columns}
+    \column{5.5cm}
+\begin{block}{Technologie et Fonction de f�licit�}<1,2,3>
+\begin{itemize}
+\item La fonction de production,
+\begin{eqnarray*}
+Y = AK^{\beta} (uhN)^{1-\beta} h_{a}^{\gamma}
+\end{eqnarray*}
+\item La fonction d'utilit�,
+\begin{eqnarray*}
+\scriptsize{
+\max_{c} \int_{0}^{\infty} u(C(t))  N(t) e^{-\rho t} dt
+}
+\end{eqnarray*}
+\end{itemize}
+\end{block}
+
+\column{5.5cm}
+\begin{block}{Les �quations dynamiques}<2,3>
+\begin{itemize}
+\item Le capital physique,
+\begin{eqnarray*}
+\small{
+\dot{K} = AK^{\beta} (uhN)^{1-\beta}h_{a}^{\gamma} - NC 
+}
+\end{eqnarray*}
+\item Le capital humain, 
+\begin{eqnarray*}
+\dot{h} = \delta (1-u)h
+\end{eqnarray*}
+\end{itemize}
+\end{block}
+\end{columns}
+
+\begin{block}{Le concept d'�quilibre}<3>
+Lucas (1988) utilise un concept d'�quilibre, qui est en fait un optimum en prenant l'externalit�, $h_{a}$, comme donn�e. 
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}
+\transdissolve
+\begin{block}{}
+\centering{\bf{\emph{Quelques critiques}}}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+     \frametitle{3 grandes critiques}
+Quelques critiques,
+\begin{itemize}
+\item<2-| alert@2> Le financement de l'accumulation du capital humain n'est pas d�crit.
+\item<3-| alert@3> Sous quelles conditions, le capital humain permet � l'�conomie de d�coller~? 
+\item<4-| alert@4> Il ne montre pas le lien entre l'�quilibre comp�titif et la notion d'�quilibre qu'il d�finit.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\transdissolve
+\begin{block}{}
+\centering{\bf{\emph{Les mod�les discut�s}}}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Mod�les de Lucas simplifi�s en temps discret}
+     \begin{columns}
+    \column{5.5cm}
+\begin{block}{\scriptsize{Le mod�le basique}}<1,2,3>
+\begin{itemize}
+\item La fonction de production,
+\begin{eqnarray*}
+0 \leq c_{t} \leq y_{t} = h_{t}^{\gamma} (\theta_{t}h_{t})^{\alpha}
+\end{eqnarray*}
+\item La fonction d'utilit�,
+\begin{eqnarray*}
+\max_{c_{t}} \sum_{0}^{\infty} \beta^{t} c_{t}^{\mu}
+\end{eqnarray*}
+\item L'accumulation du capital humain,
+\begin{eqnarray*}
+h_{t+1} = h_{t} (1+\lambda \phi(1-\theta_{t}))
+\end{eqnarray*}
+\end{itemize}
+\end{block}
+
+\column{5.5cm}
+\begin{block}{\scriptsize{Le mod�le avec temps de loisirs}}<2,3>
+\begin{itemize}
+\item La fonction de production,
+\begin{eqnarray*}
+0 \leq c_{t} \leq y_{t} = h_{t}^{\gamma} (\theta_{t}h_{t})^{\alpha}
+\end{eqnarray*}
+\item La fonction d'utilit�,
+\begin{eqnarray*}
+\max_{c_{t}} \sum_{0}^{\infty} \beta^{t} c_{t}^{\mu} (1-\theta_{t})^{\xi}
+\end{eqnarray*}
+\item L'accumulation du capital humain,
+\begin{eqnarray*}
+h_{t+1} = h_{t} (1+\lambda \phi(1-\theta_{t}))
+\end{eqnarray*}
+\end{itemize}
+\end{block}
+\end{columns}
+
+
+\begin{block}{}<3>
+Les sommes convergent si $\mathbf{H0' :} \beta(1+\lambda)^{(\alpha+\gamma)\mu}<1$. N�anmoins nous allons retenir l'hypoth�se suivante $\mathbf{H0 :} \beta(1+\lambda)^{(\alpha+\gamma)}<1$.
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mod�les transform�s}
+\begin{columns}
+    \column{5.5cm}
+\begin{block}{\scriptsize{Le mod�le basique}}<1,2,3>
+\begin{eqnarray*}
+\max \sum_{t=0}^{+\infty} \beta^{t} h_{t}^{(\alpha+\gamma)\mu}\left(\psi(\frac{h_{t+1}}{h_{t}})\right)^{\alpha\mu}
+\end{eqnarray*}
+Sous les contraintes, 
+\begin{eqnarray*}
+h_{t}\leq h_{t+1}\leq (1+\lambda)h_{t}, \ \ h_{0}\ \mbox{donn�e.}
+\end{eqnarray*}
+\end{block}
+
+\column{5.5cm}
+\begin{block}{\scriptsize{Le mod�le avec temps de loisirs}}<2,3>
+\begin{eqnarray*}
+&\max& \sum_{t=0}^{+\infty} \beta^{t} h_{t}^{(\alpha+\gamma)\mu}\left(\psi(\frac{h_{t+1}}{h_{t}})\right)^{\alpha\mu}\\
+&&\left(1-\psi(\frac{h_{t+1}}{h_{t}})\right)^{\xi}
+\end{eqnarray*}
+Sous les contraintes, 
+\begin{eqnarray*}
+h_{t}\leq h_{t+1}\leq (1+\lambda)h_{t},\ \ h_{0}\ \mbox{donn�e.}
+\end{eqnarray*}
+\end{block}
+\end{columns}
+
+\begin{block}{}<3>
+O� la fonction $\psi$ est d�finie ainsi que suit,
+\begin{eqnarray*}
+\psi(x) = 1-\phi^{-1}\left(\frac{1}{\lambda}(x-1)\right)
+\end{eqnarray*}
+$\psi$ est concave et d�croissante, $\psi'<0$, avec $\psi(1)=1$, $\psi(1+\lambda)=0$.
+\end{block}
+
+
+\end{frame}
+
+
+\section{La question du take off}
+  
+\begin{frame}
+\transdissolve
+\begin{block}{}
+\centering \huge{\textbf{II- La question du \emph{take-off}}}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{L'effet du temps de loisir sur le \emph{take-off}}
+     \begin{columns}
+    \column{5.5cm}
+\begin{block}{\scriptsize{Proposition 1 (sans temps de loisirs)}}<1,2>\label{proposition1}
+Sous la condition $\mathbf{H1: } \lambda\phi'(0)>r\frac{\alpha}{\alpha+\gamma}$ avec $r=1/\beta-1$, le sentier optimal du capital humain est tel que,
+\begin{eqnarray*}
+h_{0}<h_{1}<\cdots<h_{t}<\cdots
+\end{eqnarray*}
+\emph{\underline{Preuve : \hyperlink{annexe1}{\beamergotobutton{voir la preuve}}}} 
+\end{block}
+
+\column{5.5cm}
+\begin{block}{\scriptsize{Proposition 2 (avec temps de loisirs)}}<2>\label{proposition2}
+Dans ce cas de figure, la d�cision optimale de formation n'est jamais celle qui consiste � ne pas se former. La suite optimale est toujours croissante,
+\begin{eqnarray*}
+h_{0}<h_{1}<\cdots<h_{t}<\cdots
+\end{eqnarray*}
+\emph{\underline{Preuve : \hyperlink{annexe2}{\beamergotobutton{voir la preuve}}}} 
+\end{block}
+\end{columns}
+\end{frame}
+
+
+\section{L'optimum social}
+  
+\begin{frame}
+\transdissolve
+\begin{block}{}
+\centering \huge{\textbf{III- L'optimum social}}
+\end{block}
+\end{frame}
+  
+  
+\begin{frame}
+\frametitle{Le sentier optimal de croissance}
+\begin{block}{Proposition 3. (Mod�le de base)}\label{proposition3}
+Sous l'hypoth�se $\mathbf{H2 : } (\alpha+\gamma)\mu-1<0$,
+\begin{itemize}
+\item<2-| alert@2> Le sentier optimal du capital humain a un taux de croissance constant, $\nu_{t}=\nu$, et positif, $\nu>0$.
+\item<3-| alert@3> Ce taux (unique) cro�t avec l'externalit�, $\gamma$, et la qualit� de la formation, $\lambda$.  
+\end{itemize}
+\emph{\underline{Preuve : \hyperlink{annexe3part1}{\beamergotobutton{voir la preuve}}}} 
+\end{block}
+\end{frame}
+  
+  
+\section{L'�conomie d�centralis�e}
+  
+\begin{frame}
+\transdissolve
+\begin{block}{}
+\centering \huge{\textbf{IV- \'Equilibre et \'Equilibre Comp�titif}}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{La d�finition de Lucas (1988)}
+
+L'auteur dit (page 20),
+\begin{quotation}
+\small{
+By an equilibrium path, I mean something more complicated. First, take � path $h_{a}(t)$, $\forall t\geq 0$, to be given, like the exogenous technology path $A(t)$ in the Solow model. Given $h_{a}(t)$, consider the problem the private sector, consisting of atomistic households and firms, would solve if each agent \emph{expected} the average level of human capital to follow the path $h_{a}(t)$. That is, consider the problem of choosing $h(t)$, $k(t)$, $c(t)$ and $u(t)$ so as to maximize (1) [fonction d'utilit�] subject to (11) and (13) [fonctions d'accumulation], taking $h_{a}(t)$ as exogenous determined. When the solution path $h(t)$ for this problem coincides with the given path $h_{a}(t)$ - so that actual and expected behaviour are the same- we say that the system is in equilibrium.
+}
+\end{quotation}
+\end{frame}
+
+\begin{frame}
+\frametitle{Adaptation de la notion d'�quilibre}
+\begin{d�finition}
+\scriptsize{
+Soit une suite de capital humain $\overline{h}=(h_{0},\overline{h}_{1}, \overline{h}_{2}, ..., \overline{h}_{t},...)$ et consid�rons le mod�le suivant, 
+\begin{eqnarray*}
+\max_{c_{t}} \sum_{t=0}^{+\infty} \beta^{t} u(c_{t})
+\end{eqnarray*}
+Sous les contraintes,
+\begin{center}
+\begin{tabular}{c}
+$0\leq c_{t}\leq G(\overline{h}_{t})f(\theta_{t}h_{t})$\\
+$h_{t+1} = h_{t} (1+\lambda\phi(1-\theta_{t}))$ \\
+$0\leq \theta_{t} \leq 1$
+\end{tabular}
+\end{center}
+La solution de ce probl�me $\mathbf{h}=(h_{0},..., h_{t},...)$ va d�pendre de $\mathbf{\overline{h}}$, $\mathbf{h}=\Phi(\mathbf{\overline{h}})$.\\
+Un �quilibre est une s�quence de capital humain $\mathbf{h^{*}}=(h_{0}, ...,h_{t}^{*},...)$ telle que $\mathbf{h}^{*}=\Phi(\mathbf{h^{*}})$. 
+}
+\end{d�finition}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Competitive Equilibrium}
+\begin{d�finition}
+\scriptsize{
+$(\mathbf{h^{*}},\mathbf{c^{*}},\mathbf{\theta^{*}},\mathbf{p^{*}},\mathbf{w^{*}})$ est un �quilibre comp�titif si,
+\begin{itemize}
+\item<2-| alert@2> $(\mathbf{c^{*}},\mathbf{\theta^{*}})$ est une solution du probl�me du consommateur,
+\begin{eqnarray*}
+\max\sum_{t=0}^{+\infty}\beta^{t} u(c_{t},\theta_{t})
+\end{eqnarray*}
+Sous la contrainte~: $\sum p_{t}^{*}c_{t}\leq \sum w_{t}^{*}\theta_{t}h_{t}+\Pi^{*}$.
+\item<3-| alert@3> $\mathbf{\theta^{*}}$ est solution du programme de la firme,
+\begin{eqnarray*}
+\Pi^{*} = \max\left\{\sum_{t=0}^{+\infty}p_{t}^{*}(h_{t}^{*})^{\gamma}(\theta_{t}h_{t}^{*})^{\alpha}-\sum_{t=0}^{+\infty}w_{t}^{*}\theta_{t}h_{t}^{*}\right\}
+\end{eqnarray*}
+\item<4-| alert@4> Il y a �quilibre sur le march� des biens et services, 
+\begin{eqnarray*}
+c_{t}^{*} = (h_{t}^{*})^{\gamma} (\theta_{t}^{*}h_{t}^{*})^{\alpha}
+\end{eqnarray*}
+\end{itemize}
+}
+\end{d�finition}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Sous quelles conditions $h^{*}$ est un �quilibre~?}
+\begin{block}{Proposition 4. Mod�le de base \hyperlink{annexe4part1}{\beamergotobutton{voir la preuve}}}\label{proposition4}
+\scriptsize{
+Une s�quence $h^{*}$ est un �quilibre � partir de $h_{0}>0$ si et seulement si elle satisfait~: 
+\begin{itemize}
+\item<+-> L'int�riorit� ($\forall t\geq 0$),
+\begin{eqnarray*}
+h_{t}^{*} < h_{t+1}^{*} < (1+\lambda)h_{t}^{*},\  \  h_{0}^{*}=h_{0} 
+\end{eqnarray*}
+\item<+-> L'�quation d'Euler ($\forall t\geq 0$),
+\begin{eqnarray*}
+&&-u'(c_{t}^{*})(h_{t}^{*})^{\gamma}(h_{t}^{*}\psi(\frac{h_{t+1}^{*}}{h_{t}^{*}}))^{\alpha-1} \psi'(\frac{h_{t+1}^{*}}{h_{t}^{*}}) \\
+&=& \beta u'(c_{t+1}^{*})(h_{t+1}^{*})^{\gamma}(h_{t+1}^{*}\psi(\frac{h_{t+2}^{*}}{h_{t+1}^{*}}))^{\alpha-1}[\psi(\frac{h_{t+2}^{*}}{h_{t+1}^{*}})-\frac{h_{t+2}^{*}}{h_{t+1}^{*}}\psi'(\frac{h_{t+2}^{*}}{h_{t+1}^{*}})]
+\end{eqnarray*}
+\item<+->  La condition de transversalit�,
+\begin{eqnarray*}
+\lim_{t\rightarrow\infty} \beta^{t} u'(c_{t}^{*})(h_{t}^{*})^{\gamma}(h_{t}^{*}\psi(\frac{h_{t+1}^{*}}{h_{t}^{*}}))^{\alpha-1}\psi'(\frac{h_{t+1}^{*}}{h_{t}^{*}})h_{t+1}^{*} = 0 
+\end{eqnarray*}
+\end{itemize}
+%\emph{\underline{Preuve : \hyperlink{annexe4part1}{\beamergotobutton{voir la preuve}}}} 
+}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Unicit� de l'�quilibre}
+\begin{block}{Proposition 5 (Mod�le de base)}\label{proposition5}
+\scriptsize{
+L'�quilibre $h^{*}$~: 
+\begin{enumerate}
+\item est strictement croissant si $\mathbf{H3 : }  \lambda\phi'(0)>r$ et cro�t � taux constant $\nu>1$, 
+\item est unique.
+\item Le taux de croissance dans la version d�centralis�e est inf�rieur au taux de la version centralis�. Ce taux v�rifie $\beta(1+\lambda)<\nu^{1-(\alpha+\gamma)\mu}<\beta(1+\lambda\phi'(0))$ si $\phi'(0)>1$ et $\nu^{1-(\alpha+\gamma)\mu}=\beta(1+\lambda)$ si $\phi'(0)=1$
+\end{enumerate}
+}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Existence et unicit� de l'�quilibre comp�titif}
+\begin{block}{Proposition 6. (Mod�le de base \hyperlink{annexe5part1}{\beamergotobutton{voir la preuve}})}\label{proposition6}
+\scriptsize{
+Sous la condition $\mathbf{H4 : } \phi'(0)>1$, il existe un unique �quilibre comp�titif. 
+}
+\end{block}
+\end{frame}
+
+
+
+
+
+
+
+\part{Annexes}
+
+\section{Annexe 1}
+
+\begin{frame}\label{annexe1}
+\begin{proof}[\scriptsize{D�monstration. La suite optimale est strictement croissante ou stationnaire}]
+Soient deux suites : \\
+1. Une suite stationnaire qui v�rifie $h_{t}=h_{0}$ et $c_{t}^{*}=c_{0}$, $\forall t\geq 0$. \\
+2. Une autre d�finie comme suit~: $h_{t}=h_{0}(1+\lambda\phi(\epsilon))$, $\forall t\geq 1$. D'o�, $c_{0\epsilon}=h_{0}^{\gamma}f(h_{0}(1-\epsilon))$ et $c_{t\epsilon}=[h_{0}(1+\lambda\phi(\epsilon))]^{\gamma}f(h_{0}(1+\lambda\phi(\epsilon)))$, $\forall t\geq 1$. Nous avons, 
+\begin{eqnarray*}
+\Delta_{\epsilon}=\sum_{t=0}^{+\infty}\beta^{t}u(c_{t})-\sum_{t=0}^{+\infty} \beta^{t}u(c_{t}^{*})
+\end{eqnarray*}
+De la propri�t� de concavit� de la fonction $u$, il vient~: 
+\begin{eqnarray*}
+\lim_{\epsilon\rightarrow 0} \frac{\Delta_{\epsilon}}{\epsilon} \geq u'(c_{0}^{*})h_{0}^{\alpha+\gamma}\left[-\alpha+\frac{\beta\lambda}{1-\beta}(\alpha+\gamma)\phi'(0)\right]
+\end{eqnarray*}
+Le r�sultat vient de ce que le terme entre crochets est positif. \hyperlink{proposition1}{\beamergotobutton{Retour}}
+\end{proof}
+\end{frame}
+
+\section{Annexe 2}
+
+\begin{frame}\label{annexe2}
+\begin{proof}[\scriptsize{D�monstration. Mod�le 2~: la suite optimale est toujours croissante}]
+On d�finit la fonction $\psi~: [1,1+\lambda]\rightarrow [0,1]$ avec $\psi(x)=1-\phi^{-1}(\frac{1}{\lambda}(x-1))$. $\psi$ est une fonction d�croissante et concave avec $\psi(1)=1$ et $\psi(1+\lambda)=0$. Notre probl�me de d�part est �quivalent au suivant, 
+\begin{eqnarray*}
+\max\sum_{t=0}^{\infty}\beta^{t}h_{t}^{(\alpha+\gamma)\mu}\left(\psi(\frac{h_{t+1}}{h_{t}})\right)^{\alpha\mu}\left(1-\psi(\frac{h_{t+1}}{h_{t}})\right)^{\xi}
+\end{eqnarray*} 
+Sous la contrainte, $h_{t}\leq h_{t+1}\leq h_{t}(1+\lambda)$ et $h_{0}$ donn�e.\\
+On d�finit comme pr�c�demment deux suites, $c_{t}^{*}$ et $c_{t\epsilon}$. Nous avons alors, 
+\begin{eqnarray*}
+\Delta_{\epsilon} = \sum_{t=0}^{+\infty}\beta^{t}c_{t\epsilon}^{\mu}\left(1-\psi(\frac{h_{t+1}}{h_{t}})\right)^{\xi} - \sum_{t=0}^{+\infty}\beta^{t}c_{t}^{*\mu}(1-\psi(1))^{\xi}
+\end{eqnarray*}
+Or $\psi(1)=1$. D'o� $\Delta_{\epsilon}>0$. \\
+Le sentier optimal est strictement croissant. \hyperlink{proposition2}{\beamergotobutton{Retour}}
+\end{proof}
+\end{frame}
+
+
+
+\section{Annexe 3}
+\begin{frame}\label{annexe3part1}
+\frametitle{Annexe 3}
+\begin{block}{D�monstration. Partie 1/2}
+\scriptsize{
+Soit la \alert{\emph{fonction valeur}} de notre probl�me,
+\begin{eqnarray*}
+V(h) = \max \sum_{t=0}^{+\infty}\beta^{t} h_{t}^{(\alpha+\gamma)\mu}\left(\psi\frac{h_{t+1}}{h_{t}}\right)^{\alpha\mu}
+\end{eqnarray*}
+On peut montrer que cette fonction v�rifie~: $V(h_{0}) = A(\gamma)h_{0}^{(\alpha+\gamma)\mu}$.\\
+Nous savons que la fonction valeur satisfait l'�quation de Bellman,
+\begin{eqnarray*}
+V(h) &=& h^{(\alpha+\gamma)\mu} \max_{\nu\in[1,1+\lambda]} ((\psi(\nu)^{\alpha\mu}+\beta A(\gamma)\nu^{(\alpha+\gamma)\mu} \\
+    &=& h^{(\alpha+\gamma)\mu} \left\{(\psi(\nu^{*})^{\alpha\mu}+\beta A(\gamma)(\nu^{*})^{(\alpha+\gamma)\mu}\right\}
+\end{eqnarray*}
+Etant donn� $h_{0}$, la valeur optimale du capital humain � la date 1, $h_{1}^{*}$, est la solution de l'�quation, 
+\begin{eqnarray*}
+\max_{y\in[h_{0},(1+\lambda)h_{0}]} \left\{(\psi(\frac{y}{h_{0}})^{\alpha\mu}+\beta A(\gamma)(\frac{y}{h_{0}})^{(\alpha+\gamma)\mu}\right\}
+\end{eqnarray*}
+Nous pouvons voir que $h_{1}^{*}=\nu h_{0}$. Il en va de m�me aux dates 2, 3, etc. Il s'en suit que le sentier optimal v�rifie~: $h_{t}=\nu^{t}h_{0}$, $\forall t\geq 0$.
+}
+\end{block}
+\end{frame}
+
+
+\begin{frame}\label{annexe3part2}
+\frametitle{Annexe 3 (suite)}
+\begin{proof}[D�monstration. Partie 2/2]
+\scriptsize{
+Pour montrer que ce taux est compris entre $1$ et $1+\lambda$, il faut utiliser l'\emph{�quation d'Euler},
+\begin{eqnarray*}
+u_{2}(h_{t}^{*},h_{t+1}^{*}) + \beta u_{1}(h_{t+1}^{*},h_{t+2}^{*}) = 0
+\end{eqnarray*}
+Ce qui donne,
+\begin{eqnarray*}
+\nu^{1-(\alpha+\gamma)\mu} &=& \frac{\beta}{\alpha}\left[-(\alpha+\gamma)\frac{\psi(\nu)}{\psi'(\nu)}+\alpha\nu\right] \\
+H(\nu)                     &=& F(\nu) 
+\end{eqnarray*}
+Or $H'(\nu)>0$, $F'(\nu)<0$ avec $F(1)=\beta[(\alpha+\gamma)\frac{\lambda\phi'(0)}{\alpha}+1]>1=H(1)$ d'apr�s la condition de croissance du sentier optimal. \\
+De plus, $F(1+\lambda)=\beta(1+\lambda)<H(1+\lambda)=(1+\lambda)^{1-(\alpha+\gamma)\mu}$ d'apr�s la condition de finitude de la somme d'utilit� intertemporelle. Nous concluons que $\nu$ est unique et qu'il est tel que $\nu\in]1,1+\lambda[$. 
+}
+\end{proof}
+\end{frame}
+
+
+\begin{frame}\label{annexe3part3}
+\frametitle{Annexe 3}
+\begin{block}{Repr�sentation graphique}
+\begin{center}
+\begin{figure}[ht]
+\begin{center}
+\setlength{\fboxsep}{8pt}
+\psframebox[fillstyle=solid,fillcolor=white,framesep=0pt,linestyle=none]{
+\begin{minipage}{240pt}
+\begin{center}
+\psset{unit=0.6cm}
+\begin{pspicture}(-1.5,-1)(9,8)
+\psaxes[Dx=9,Dy=8]{->}(0,0)(8.5,7.5)
+\rput{0}(8.2,-0.5){\scriptsize{$\nu$}}
+\rput{0}(-0.7,7.5){$F,H$}
+\pscurve(0,2)(4,4)(6.5,6)
+\psline(6.5,0)(6.5,7)
+\rput{0}(6.5,-0.5){\scriptsize{$1+\lambda$}}
+\rput{0}(-1.2,2){\scriptsize{$H(1)=1$}}
+\rput{0}(7.6,6){\scriptsize{$H(1+\lambda)$}}
+\pscurve(0,5.5)(4,4)(6.5,1.5)
+\rput{0}(-0.7,5.5){\scriptsize{$F(1)$}}
+\rput{0}(7.6,1.5){\scriptsize{$F(1+\lambda)$}}
+\psline[linewidth=.2pt,linestyle=dashed](4,0)(4,4)
+\rput{0}(4,-0.5){\scriptsize{$\nu^{*}$}}
+\rput{0}(0,-0.5){\scriptsize{$\nu=1$}}
+\end{pspicture}
+\end{center}
+\end{minipage}}
+\end{center}
+\end{figure}
+\hyperlink{proposition3}{\beamergotobutton{Retour}}
+\end{center}
+\end{block}
+\end{frame}
+
+
+\begin{frame}\label{annexe4part1}
+\frametitle{Annexe 4 : la condition de transversalit�}
+\begin{block}{Partie 1/2}
+\scriptsize{
+Prouvons la partie 3 de la proposition~: $h^{*}$ v�rifie la condition de transversalit�. \\
+Soit la fonction valeur, 
+\begin{eqnarray*}
+V_{h^{*}}(h_{0}) = \max \sum_{t=0}^{+\infty}\beta^{t}h_{t}^{*\gamma\mu}h_{t}^{\alpha\mu}[\psi(\frac{h_{t+1}}{h_{t}})]^{\alpha\mu}
+\end{eqnarray*}
+O� $h^{*}$ est une suite d'externalit�.\\
+- Cette fonction est telle que,
+\begin{eqnarray*}
+0\leq V_{h^{*}}(h_{0}) \leq h_{0}^{*\gamma\mu}h_{0}^{\alpha\mu}\sum_{t=0}^{+\infty}[\beta(1+\lambda)^{(\alpha+\gamma)\mu}]^{t}<\infty
+\end{eqnarray*}
+- $V_{h^{*}}$ est de classe $C^{2}$ et concave (voir Stockey and Lucas, 1989). Nous avons, 
+\begin{eqnarray*}
+V'_{h^{*}}(h_{0}) = \alpha u'(c_{0})h_{0}^{*\gamma}[h_{0}\psi(\frac{h_{1}}{h_{0}})]^{\alpha-1}[\psi(\frac{h_{1}}{h_{0}})-\frac{h_{1}}{h_{0}}]\psi'(\frac{h_{1}}{h_{0}})
+\end{eqnarray*}
+}
+\end{block}
+\end{frame}
+
+\begin{frame}\label{annexe4part2}
+\frametitle{Annexe 4 : la condition de transversalit�}
+\begin{proof}[Partie 2/2]
+\scriptsize{
+De la concavit� de la fonction valeur et puisque $V_{h^{*}}(0)=0$, il vient~: 
+\begin{eqnarray*}
+V_{h^{*}}(h_{t}^{*}) = V_{h^{*}}(h_{t}^{*}) - V_{h^{*}}(0) \geq V'_{h^{*}}(h_{t}^{*})h_{t}^{*}
+\end{eqnarray*}
+En rempla�ant $V'_{h^{*}}(h_{t}^{*})$ par son expression, il vient~: 
+\begin{eqnarray*}
+V_{h^{*}}(h_{t}^{*}) \geq u'(c_{t}^{*})h_{t}^{*\gamma}[h_{t}^{*}\psi(\frac{h_{t+1}^{*}}{h_{t}^{*}})]^{\alpha-1}[\psi(\frac{h_{t+1}^{*}}{h_{t}^{*}}-\frac{h_{t+1}^{*}}{h_{t}^{*}}]\psi'(\frac{h_{t+1}^{*}}{h_{t}^{*}})
+\end{eqnarray*}
+En utilisant l'�quation d'Euler,
+\begin{eqnarray*}
+V_{h^{*}}(h_{t}^{*}) \geq u'(c_{t}^{*})h_{t}^{*\gamma}[h_{t}^{*}\psi(\frac{h_{t+1}^{*}}{h_{t}^{*}})]^{\alpha-1} \psi'(\frac{h_{t+1}^{*}}{h_{t}^{*}})h_{t+1}^{*} \geq 0
+\end{eqnarray*}
+En multipliant par $\beta^{t}$, en prenant la limite et en remarquant que $\psi'<0$, nous en d�duisons~: 
+\begin{eqnarray*}
+\lim_{t\rightarrow \infty} \beta^{t}u'(c_{t}^{*})h_{t}^{*\gamma}[h_{t}^{*}\psi(\frac{h_{t+1}^{*}}{h_{t}^{*}})]^{\alpha-1} \psi'(\frac{h_{t+1}^{*}}{h_{t}^{*}})h_{t+1}^{*} = 0
+\end{eqnarray*}
+C'est notre condition de transversalit�.
+}
+\end{proof}
+\end{frame}
+
+
+
+
+\begin{frame}\label{annexe5part1}
+\frametitle{Annexe 5 : Existence et unicit� de l'�quilibre}
+\begin{block}{Partie 1/3}
+\scriptsize{
+Il faut en premier lieu d�finir le syst�me de prix qui soutient l'�quilibre comp�titif. Nous savons que, $0\leq c_{t} \leq h_{t}^{\alpha+\gamma}$ avec $h_{t}\leq h_{0}(1+\lambda)^{t}$. $\mathbf{c}$ appartient donc �,
+\begin{eqnarray*}
+\ell_{c}^{\infty} = \left\{\mathbf{c} : \sup_{t=0,\ldots,+\infty} \frac{|c_{t}|}{(1+\lambda)^{(\alpha+\gamma)t}}<+\infty\right\}
+\end{eqnarray*}
+De m�me, on d�finit les ensembles suivants,
+\begin{eqnarray*}
+\ell_{h}^{\infty} &=& \left\{\mathbf{h} : \sup_{t=0,\ldots,+\infty} \frac{|h_{t}|}{(1+\lambda)^{t}}<+\infty\right\} \\
+\ell_{p}^{1} &=& \left\{\mathbf{p} : \sum_{t=0}^{\infty}|p_{t}|(1+\lambda)^{(\alpha+\gamma)t}<+\infty\right\} \\
+\ell_{w}^{1} &=& \left\{\mathbf{w} : \sum_{t=0}^{\infty}|w_{t}|(1+\lambda)^{t}<+\infty\right\} 
+\end{eqnarray*}
+De sorte que $\sum p_{t}c_{t}<\infty$ et $\sum w_{t}h_{t}<\infty$. 
+}
+\end{block}
+\end{frame}
+
+\begin{frame}\label{annexe5part2}
+\frametitle{Annexe 5 : Existence et unicit� de l'�quilibre}
+\begin{block}{Partie 2/3}
+\scriptsize{
+Nous avions dit qu'une liste de s�quences,
+\begin{eqnarray*}
+(\mathbf{h}^{*}, \mathbf{c}^{*}, \mathbf{\theta}^{*}, \mathbf{p}^{*}, \mathbf{w}^{*})
+\end{eqnarray*}
+est un �quilibre comp�titif si~: 1. $(\mathbf{c}^{*},\mathbf{\theta}^{*})$ est solution du probl�me du consommateur. 2. $\mathbf{\theta}^{*}$ est solution du probl�me de la firme. 3. il y a �quilibre sur le march� des B\&S. \\
+D�finissons les prix, $\mathbf{p}^{*}$, et les salaires, $\mathbf{w}^{*}$ � la date $t$, de la fa�on suivante, 
+\begin{eqnarray*}
+p_{t}^{*} &=& \beta^{t} \frac{\partial u(c_{t})}{\partial c_{t}} = \mu\beta^{t}h_{t}^{*(\alpha+\gamma)(\mu-1)}\psi'(\nu^{*})^{\alpha(\mu-1)} \\
+w_{t}^{*} &=& \beta^{t} \frac{\partial u(c_{t})}{\partial (\theta_{t}h_{t})} = \alpha\mu\beta^{t}(h_{t}^{*})^{(\alpha+\gamma)\mu-1} \psi(\nu^{*})^{\alpha(\mu-1)}
+\end{eqnarray*}
+}
+\end{block}
+\end{frame}
+
+
+\begin{frame}\label{annexe5part3}
+\frametitle{Annexe 5 : Existence et unicit� de l'�quilibre}
+\begin{proof}
+\scriptsize{
+V�rifons que $\mathbf{p}^{*}\in \ell_{p}^{1}$ et que $\mathbf{w}^{*}\in \ell_{w}^{1}$.\\
+En effet, nous avons~: 
+\begin{eqnarray*}
+\sum_{t=0}^{+\infty} p_{t}^{*}(1+\lambda)^{(\alpha+\gamma)t} &<& \mu h_{0}^{(\alpha+\gamma)(\mu-1)} \psi(\nu^{*})^{\alpha(\mu-1)}\sum_{t=0}^{+\infty}\beta^{t}(1+\lambda)^{(\alpha+\gamma)t} < \infty \\
+\sum_{t=0}^{+\infty} w_{t}^{*}(1+\lambda)^{t}&=& \alpha\mu\sum_{t=0}^{+\infty}\beta^{t}h_{t}^{*(\alpha+\gamma)\mu-1}\psi(\nu^{*})^{\alpha\mu-1} 
+\end{eqnarray*}
+Nous avons, 
+\begin{eqnarray*}
+\sum_{t=0}^{+\infty}\beta^{t}(1+\lambda)^{t}h_{t}^{*(\alpha+\gamma)\mu-1} = h_{0}^{(\alpha+\gamma)\mu-1}\sum_{t=0}^{+\infty}[\beta(1+\lambda)(\nu^{*})^{(\alpha+\gamma)\mu-1}]^{t}<+\infty
+\end{eqnarray*}
+De la proposition 5, nous savons que si $\phi'(0)>1$ alors $\beta(1+\lambda)<\nu^{1-(\alpha+\gamma)\mu}$.
+}
+\end{proof}
+\end{frame}
+
+
+
+\part{Bibliography}
+
+\section{Bibliography}
+
+
+\begin{frame}
+\transsplitverticalin
+\begin{block}{}
+\centering \huge{\textbf{Bibliographie}}
+\end{block}
+\end{frame}
+
+\subsection{Articles}
+
+\begin{frame}
+\frametitle{References}
+
+\begin{thebibliography}{10}
+\beamertemplatearticlebibitems
+
+\bibitem{ah}\label{ah1992}
+Benhabib \& Perli (1994) 
+\newblock{\em Uniqueness and Indeterminacy~: On the Dynamics of Endogenous Growth},
+\newblock{Journal of Economic Theory, \no 63, pp. 513-523}.
+\bibitem{mi}\label{mi98}
+Mitra (1998) 
+\newblock{\em On Equilibrium Dynamics under Externalities in a Model of Economic Development},
+\newblock{Japanese Economic Review, Vol. 49, \no 2, pp. 85-107}.
+\bibitem{so}\label{so57}
+Solow (1957)
+\newblock{\em Aggregate Production Functions and Types of Technical progress~: A Statistical Analysis},
+\newblock{American Economic Review, Vol. 59, \no 1, pp. 88-101}.
+\bibitem{uz}\label{uz65}
+Uzawa (1965)
+\newblock{\em Optimal Technological Change in an Aggregative Model of Economic Growth},
+\newblock{International Economic Review, Vol. 6, \no 1, pp. 18-31}.
+
+\end{thebibliography}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{References}
+
+\begin{thebibliography}{10}
+\beamertemplatebookbibitems
+
+\bibitem{ld}\label{ld03}
+Le Van \& Dana (2003)
+\newblock{\em Dynamic Programming in Economics},
+\newblock{Kluwer Academic Publishers}.
+\bibitem{st}\label{st89}
+Stockey \& Lucas with Prescott (1989)
+\newblock{\em Recursive Methods in Economic Dynamics},
+\newblock{Harvard Universit� Press}.
+
+\end{thebibliography}
+\end{frame}
+
+
+\end{document}
